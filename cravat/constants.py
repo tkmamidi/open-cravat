@@ -5,6 +5,7 @@ import shutil
 import sys
 import platform
 import yaml
+import joblib
 
 # Directories
 custom_modules_dir = None
@@ -377,7 +378,7 @@ legacy_gene_level_cols_to_skip = ["base__num_variants", "base__so", "base__all_s
 default_num_input_line_warning_cutoff = 25000
 default_settings_gui_input_size_limit = 500
 default_max_num_concurrent_jobs = 4
-default_max_num_concurrent_annotators_per_job = max(1, os.cpu_count() - 1)
+default_max_num_concurrent_annotators_per_job = max(1, joblib.cpu_count() - 1)
 default_multicore_mapper_mode = True
 default_assembly = "hg38"
 default_assembly_key = "default_assembly"
