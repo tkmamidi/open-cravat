@@ -180,7 +180,7 @@ cravat_cmd_parser.add_argument(
     help="note will be written to the run status file (.status.json)",
 )
 cravat_cmd_parser.add_argument(
-    "-mp", dest="mp", default=None, help="number of processes to use to run annotators"
+    "--mp", dest="mp", default=None, help="number of processes to use to run annotators"
 )
 cravat_cmd_parser.add_argument(
     "-i",
@@ -280,7 +280,7 @@ cravat_cmd_parser.add_argument(
     help="Generate concise reports with default columns defined by each annotation module",
 )
 cravat_cmd_parser.add_argument(
-    "-package", dest="package", default=None, help="Use package"
+    "--package", dest="package", default=None, help="Use package"
 )
 cravat_cmd_parser.add_argument("--filtersql", default=None, help="Filter SQL")
 cravat_cmd_parser.add_argument("--includesample", nargs='+', default=None, help="Sample IDs to include")
